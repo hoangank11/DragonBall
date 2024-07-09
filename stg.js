@@ -26,7 +26,7 @@ function setup() {
     // power img
     loadImg(2, "image/SR.png");
     loadImg(11, "image/SSR.png");
-	loadImg(19, "image/explode.png");
+    loadImg(19, "image/explode.png");
 
     // title img
     loadImg(30, "image/title.png");
