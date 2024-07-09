@@ -82,6 +82,7 @@ function mainloop() {
             }
             if (tmr % 80 < 20) fText("made by", 870, 700, 10, "white");
             fText("HOANG MANH THANG", 1010, 700, 20, "red");
+	    if (tmr % 30 < 20) fText("press [Space] to shotting", 600, 700, 30, "white");
         break;
 		case 2:
 			if (tmr < 30*2 && tmr%5 == 1) setEffect(ssX+rnd(120) - 60, ssY + rnd(80) - 40, 9);
