@@ -162,7 +162,7 @@ function moveSShip() {
         setWeapon();
         drawImgC(6, ssX, ssY);
     }
-    else if (automa == 1 && tmr % 8 == 0 && stage == 2) {
+    else if (automa == 1 && tmr % 8 == 0 && stage >= 2) {
         setWeapon();
         drawImgC(6, ssX, ssY);
     }
