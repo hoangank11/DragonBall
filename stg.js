@@ -1,4 +1,4 @@
-﻿//起動時の処理
+//起動時の処理
 function setup() {
     canvasSize(1200, 720);
     // back ground img
@@ -26,7 +26,7 @@ function setup() {
     // power img
     loadImg(2, "image/SR.png");
     loadImg(11, "image/SSR.png");
-    loadImg(19, "image/explode.png");
+	loadImg(19, "image/explode.png");
 
     // title img
     loadImg(30, "image/title.png");
@@ -82,7 +82,7 @@ function mainloop() {
             }
             if (tmr % 80 < 20) fText("made by", 870, 700, 10, "white");
             fText("HOANG MANH THANG", 1010, 700, 20, "red");
-	    if (tmr % 30 < 20) fText("press [Space] to shotting", 600, 700, 30, "white");
+            if (tmr % 40 < 20) fText("Press [Space] to shotting", 600, 700, 20, "white");
         break;
 		case 2:
 			if (tmr < 30*2 && tmr%5 == 1) setEffect(ssX+rnd(120) - 60, ssY + rnd(80) - 40, 9);
@@ -173,7 +173,7 @@ function moveSShip() {
         drawImgC(10, ssX, ssY);
     }
 
-    if (stage == 2) {
+    if (stage >= 2) {
 	var col = "black";
         if (automa == 1) col = "white";
         fRect(990, 20, 100, 60, "red");
